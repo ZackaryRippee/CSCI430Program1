@@ -1,0 +1,10 @@
+#ifndef MERGESORT_H
+#define MERGESORT_H
+
+#include <iostream>
+#include <vector>
+
+
+void mergesort(std::vector<int> &ar);
+
+#endif // MERGESORT_H
