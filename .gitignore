@@ -1,0 +1,66 @@
+# Compiled source files
+*.class
+*.o
+*.so
+*.exe
+*.dll
+*.out
+*.ilk
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Java
+*.jar
+*.war
+*.ear
+
+# C/C++
+*.obj
+*.elf
+
+# Visual Studio
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Environment files
+.env
+
+# Dependency directories
+node_modules/
+venv/
+.env/
+.idea/
+*.iml
+
+# Build directories
+build/
+dist/
+out/
+bin/
+debug/
+release/
+
+# Backup files
+*~
+*.bak
+*.tmp
+
+# Git
+.git/

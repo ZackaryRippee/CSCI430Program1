@@ -1,19 +1,18 @@
-# Simple Makefile using g++
+# Minimal Makefile
+CXX ?= g++
+CXXFLAGS ?= -Wall -g
 
-CXX = g++
-CXXFLAGS = -Wall -g
+SRCS := $(wildcard *.cpp)
+OBJS := $(SRCS:.cpp=.o)
 
-TARGET = main
-SRCS = main.cpp
-OBJS = $(SRCS:.cpp=.o)
+all: main
 
-all: $(TARGET)
-
-$(TARGET): $(OBJS)
+main: $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
 %.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c $<
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
+.PHONY: clean
 clean:
-	rm -f $(OBJS) $(TARGET)
+	rm -f main $(OBJS)
