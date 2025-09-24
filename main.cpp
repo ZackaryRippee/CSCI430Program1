@@ -18,13 +18,21 @@ int main() {
         arr[i] = dist(gen);
     }
 
-    // Sort the array using selection sort A (expects std::vector<int>&)
+    // Sort the array using selection sort A 
     selectionSortA(arr);
     for (int i = 0; i < 100; ++i) { // Print the array
         std::cout << arr[i] << " ";
     }
     std::cout << std::endl;
 
-
+    for (int i = 0; i < 100; ++i) { // Refill the vector with random numbers between 0 and 100
+        arr[i] = dist(gen);
+    }
+    // Sort the array using selection sort B
+    selectionSortB(arr);
+    for (int i = 0; i < 100; ++i) { // Print the array
+        std::cout << arr[i] << " ";
+    }
+    std::cout << std::endl;
     return 0;
 }
