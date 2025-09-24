@@ -7,8 +7,8 @@
 void merge(std::vector<int> &arr, int p, int q, int r){
     int nL = q - p + 1; //length of A[p:q]
     int nR = r - q; //length of A[q+1:r]
-    std::vector<int> L(nL + 1); //create left array
-    std::vector<int> R(nR + 1); //create right array
+    std::vector<int> L(nL); //create left array
+    std::vector<int> R(nR); //create right array
     for (int i = 0; i < nL; i++){
         L[i] = arr[p + i]; //copy A[p:q] to L
     }
@@ -46,6 +46,7 @@ void mergeHelper(std::vector<int> &ar, int p, int r){
     if (p >= r){
         return;
     }
+
     int q = (p + r) / 2; //q is the middle element between p and r
     mergeHelper(ar, p, q);
     mergeHelper(ar, q + 1, r);
@@ -53,15 +54,10 @@ void mergeHelper(std::vector<int> &ar, int p, int r){
 }
 
 void mergesort(std::vector<int> &arr){
-    int p = arr[arr.size() / 2]; //pivot is the middle element
-    int r = arr.size() - 1; //right is the last element
-
-    if (p => r){
-        return;
-    }
-    int q = (p + r) / 2; //q is the middle element between p and r
-    mergeHelper(arr, p, q);
-    mergeHelper(arr,q + 1, r);
-    merge(arr, p, q, r);
+    if (arr.empty()) return;
+    int p = 0; // left index
+    int r = (int)arr.size() - 1; // right index
+    if (p >= r) return;
+    mergeHelper(arr, p, r);
 }
 
