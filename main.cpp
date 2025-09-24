@@ -1,3 +1,6 @@
+//Zackary Rippee CSCI 430 Program 1
+
+
 #include <iostream>
 #include <random>
 #include <vector>
