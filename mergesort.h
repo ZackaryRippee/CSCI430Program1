@@ -4,7 +4,7 @@
 #include <iostream>
 #include <vector>
 
-
 void mergesort(std::vector<int> &ar);
+
 
 #endif // MERGESORT_H
