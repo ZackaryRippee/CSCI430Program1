@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 
+void quicksortHelper(std::vector<int> &ar, int low, int high);
 void quicksort(std::vector<int> &ar);
 
 

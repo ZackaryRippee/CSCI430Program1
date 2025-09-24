@@ -43,6 +43,16 @@ int main() {
     for (int i = 0; i < MAX; ++i) { // Print the array
         std::cout << arr[i] << " ";
     }
+    std::cout << std::endl;
 
+    for (int i = 0; i < MAX; ++i) { // Refill the vector with random numbers between 0 and MAX
+        arr[i] = dist(gen);
+    }
+    // Sort the array using quicksort
+    quicksort(arr);
+    for (int i = 0; i < MAX; ++i) { // Print the array
+        std::cout << arr[i] << " ";
+    }
+    std::cout << std::endl;
     return 0;
 }
