@@ -3,6 +3,7 @@
 #include <vector>
 #include <algorithm>
 
+//Selection sort algorithm that swaps whenever a smaller element is found
 void selectionSortA(std::vector<int> &ar) {
     int n = ar.size();
     for (int i = 0; i < n - 1; i++) {

@@ -34,5 +34,11 @@ int main() {
         std::cout << arr[i] << " ";
     }
     std::cout << std::endl;
+
+    for (int i = 0; i < 100; ++i) { // Refill the vector with random numbers between 0 and 100
+        arr[i] = dist(gen);
+    }
+
+    
     return 0;
 }
