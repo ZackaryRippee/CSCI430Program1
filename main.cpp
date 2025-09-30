@@ -9,6 +9,12 @@
 #include "selectionSortB.h"
 #include "mergesort.h"
 #include "quicksort.h"
+#include "insertionSort.h"
+#include "bubbleSortA.h"
+#include "bubbleSortB.h"
+#include "bubbleSortC.h"
+#include "countingSort.h"
+#include "radixSort.h"
 
 int main() {
     std::random_device rd; //Obtain a random number from hardware for seeding
@@ -55,6 +61,54 @@ int main() {
     quicksort(arr);
     for (int i = 0; i < MAX; ++i) { // Print the array
         std::cout << arr[i] << " ";
+    }
+    std::cout << std::endl;
+
+    // Sort the array using insertion sort
+    std::vector<int> arrInsertion = arr;
+    insertionSort(arrInsertion);
+    for (int i = 0; i < MAX; ++i) { // Print the array
+        std::cout << arrInsertion[i] << " ";
+    }
+    std::cout << std::endl;
+
+    // Sort the array using bubble sort A
+    std::vector<int> arrBubbleA = arr;
+    bubbleSortA(arrBubbleA);
+    for (int i = 0; i < MAX; ++i) { // Print the array
+        std::cout << arrBubbleA[i] << " ";
+    }
+    std::cout << std::endl;
+
+    // Sort the array using bubble sort B
+    std::vector<int> arrBubbleB = arr;
+    bubbleSortB(arrBubbleB);
+    for (int i = 0; i < MAX; ++i) { // Print the array
+        std::cout << arrBubbleB[i] << " ";
+    }
+    std::cout << std::endl;
+
+    // Sort the array using bubble sort C
+    std::vector<int> arrBubbleC = arr;
+    bubbleSortC(arrBubbleC);
+    for (int i = 0; i < MAX; ++i) { // Print the array
+        std::cout << arrBubbleC[i] << " ";
+    }
+    std::cout << std::endl;
+
+    // Sort the array using counting sort
+    std::vector<int> arrCounting = arr;
+    countingSort(arrCounting);
+    for (int i = 0; i < MAX; ++i) { // Print the array
+        std::cout << arrCounting[i] << " ";
+    }
+    std::cout << std::endl;
+
+    // Sort the array using radix sort
+    std::vector<int> arrRadix = arr;
+    radixSort(arrRadix);
+    for (int i = 0; i < MAX; ++i) { // Print the array
+        std::cout << arrRadix[i] << " ";
     }
     std::cout << std::endl;
     return 0;
