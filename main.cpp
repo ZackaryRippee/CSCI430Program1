@@ -64,6 +64,9 @@ int main() {
     }
     std::cout << std::endl;
 
+    for (int i = 0; i < MAX; ++i) { // Refill the vector with random numbers between 0 and MAX
+        arr[i] = dist(gen);
+    }
     // Sort the array using insertion sort
     std::vector<int> arrInsertion = arr;
     insertionSort(arrInsertion);
@@ -72,6 +75,9 @@ int main() {
     }
     std::cout << std::endl;
 
+    for (int i = 0; i < MAX; ++i) { // Refill the vector with random numbers between 0 and MAX
+        arr[i] = dist(gen);
+    }
     // Sort the array using bubble sort A
     std::vector<int> arrBubbleA = arr;
     bubbleSortA(arrBubbleA);
@@ -80,6 +86,9 @@ int main() {
     }
     std::cout << std::endl;
 
+    for (int i = 0; i < MAX; ++i) { // Refill the vector with random numbers between 0 and MAX
+        arr[i] = dist(gen);
+    }
     // Sort the array using bubble sort B
     std::vector<int> arrBubbleB = arr;
     bubbleSortB(arrBubbleB);
@@ -88,6 +97,9 @@ int main() {
     }
     std::cout << std::endl;
 
+    for (int i = 0; i < MAX; ++i) { // Refill the vector with random numbers between 0 and MAX
+        arr[i] = dist(gen);
+    }
     // Sort the array using bubble sort C
     std::vector<int> arrBubbleC = arr;
     bubbleSortC(arrBubbleC);
@@ -96,6 +108,9 @@ int main() {
     }
     std::cout << std::endl;
 
+    for (int i = 0; i < MAX; ++i) { // Refill the vector with random numbers between 0 and MAX
+        arr[i] = dist(gen);
+    }
     // Sort the array using counting sort
     std::vector<int> arrCounting = arr;
     countingSort(arrCounting);
@@ -104,6 +119,9 @@ int main() {
     }
     std::cout << std::endl;
 
+    for (int i = 0; i < MAX; ++i) { // Refill the vector with random numbers between 0 and MAX
+        arr[i] = dist(gen);
+    }
     // Sort the array using radix sort
     std::vector<int> arrRadix = arr;
     radixSort(arrRadix);
